@@ -13,7 +13,26 @@ this is a python program that run reports against a psql database which is locat
  - open the terminal
  - go to the directory vm configuration downloaded file.
  - go to vagrant folder
- - then'<vagrant up'>
-       '<vagrant ssh'>
+ - then```vagrant up
+          vagrant ssh```
+          
+ ## how to run
+ - After starting up Vagrant navigate to the location of your newsdata.sql file. you will now  load all the tables in the database. 
+   Run this command:
+   ` psql -d news -f newsdata.sql`
+ - now run the file 
+   `python newsanalysis.py`
+  
+  
+  
+  
+  
+  
+ ### The output of running that command will produce three reports that answer the following questions:
+- What are the most popular three articles of all time?
+- Who are the most popular article authors of all time?
+- On which days did more than 1% of requests lead to errors?
+
  
+
 
